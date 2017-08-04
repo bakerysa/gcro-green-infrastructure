@@ -1,2 +1,4 @@
 # GCRO
-## 3 Spheres of Government 
+## Green Infrastructure
+
+All data used is Copyright [GCRO](http://www.gcro.ac.za/)
