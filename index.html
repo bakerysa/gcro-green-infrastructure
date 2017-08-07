@@ -1,32 +1,249 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<title>Green Infastructure/title>
-    	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<style>
 
-	<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-		<div id="chart">
-      <div id="clicker">Let's Start</div>
-      <div id="progress"></div>
-    </div>
-		<!-- <div id="clickerWrapper">
-			<div id="progress"></div>
-			<div id="clicker">Let's Start</div>
-		</div> -->
-		<!-- <div id="buttonWrapper">
-			<div id="buttonWrapperInner">
-				<div id="skip" class="sideButton">SKIP INTRO</div>
-				<div id="reset" class="sideButton">RESET</div>
-				<div id="link" class="sideButton"><a href="http://bl.ocks.org/nbremer/raw/94db779237655907b907/" target="_blank">GO TO SOURCE</a></div>
-			</div>
-		</div> -->
+body {
+  background: #222;
+  margin: 0 auto;
+}
 
-    <script src="chords.js"></script>
-   </body>
+.node {
+  font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #bbb;
+}
+
+.node:hover {
+  fill: #fff;
+}
+
+.link {
+  stroke: steelblue;
+  stroke-opacity: 0.4;
+  fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+}
+
+.node--source {
+  fill: #2ca02c;
+}
+
+.node--target {
+  fill: #d62728;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link--source {
+  stroke: #d62728;
+}
+
+.link--target {
+  stroke: #2ca02c;
+}
+
+</style>
+<body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+<script type="text/javascript" src="d3.min.js"></script>
+<script>
+
+var diameter = 1080,
+    radius = diameter / 2,
+    innerRadius = radius - 120;
+
+var cluster = d3.cluster()
+    .size([360, innerRadius]);
+
+var line = d3.radialLine()
+    .curve(d3.curveBundle.beta(0.85))
+    .radius(function(d) { return d.y; })
+    .angle(function(d) { return d.x / 180 * Math.PI; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + radius + "," + radius + ")");
+
+var link = svg.append("g").selectAll(".link"),
+    node = svg.append("g").selectAll(".node");
+
+function linkStroke() {
+  if (line === "solid") {
+    return 0;
+  }
+  else if (line === "jotted") {
+    return 5,5;
+  }
+};
+
+d3.json("flare.json", function(error, classes) {
+
+
+  if (error) throw error;
+
+  var root = packageHierarchy(classes)
+      .sum(function(d) { return d.size; });
+
+  cluster(root);
+
+  link = link
+    .data(packageImports(root.leaves()))
+    .enter().append("path")
+      .each(function(d) { d.source = d[0], d.target = d[d.length - 1];})
+      .attr("class", "link")
+      .attr("d", line)
+      .style("stroke", function(classes){
+
+        _.forEach(classes, function(d) {
+
+            var name = name.split('.')[0];
+
+            if (name === "national") {
+              return "#832A2A";
+            }
+            else if (name === "gauteng") {
+              return "#AA0A0B";
+            }
+            else if (name === "johannesburg") {
+              return "#E52425";
+            }
+            else if (name === "tshwane") {
+              return "#ED5926";
+            }
+            else if (name === "ekurhuleni") {
+              return "#CC5A31";
+            }
+            else if (name === "emfuleni") {
+              return "#F48851";
+            }
+            else if (name === "lesedi") {
+              return "#F07067";
+            }
+            else if (name === "merafong") {
+              return "#D19F22";
+            }
+            else if (name === "midvaal") {
+              return "#DEC478";
+            }
+            else if (name === "mogale") {
+              return "#338933";
+            }
+            else if (name === "randwest") {
+              return "#6E9C73";
+            }
+            else if (name === "uj") {
+              return "#74C179";
+            }
+            else if (name === "wits") {
+              return "#A3C9A7";
+            }
+            else if (name === "stakeholders") {
+              return "#178287";
+            }
+            else if (name === "knowledge") {
+              return "#1F8395";
+            }
+            else if (name === "staff") {
+              return "#485A96";
+            }
+            else if (name === "discipline") {
+              return "#6591B2";
+            }
+        });
+
+      });
+
+  node = node
+    .data(root.leaves())
+    .enter().append("text")
+      .attr("class", "node")
+      .attr("dy", "0.31em")
+      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)"); })
+      .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      .text(function(d) { return d.data.key; })
+      .on("mouseover", mouseovered)
+      .on("mouseout", mouseouted);
+});
+
+function mouseovered(d) {
+  node
+      .each(function(n) { n.target = n.source = false; });
+
+  link
+      .classed("link--target", function(l) { if (l.target === d) return l.source.source = true; })
+      .classed("link--source", function(l) { if (l.source === d) return l.target.target = true; })
+    .filter(function(l) { return l.target === d || l.source === d; })
+      .raise();
+
+  node
+      .classed("node--target", function(n) { return n.target; })
+      .classed("node--source", function(n) { return n.source; });
+}
+
+function mouseouted(d) {
+  link
+      .classed("link--target", false)
+      .classed("link--source", false);
+
+  node
+      .classed("node--target", false)
+      .classed("node--source", false);
+}
+
+// Lazily construct the package hierarchy from class names.
+function packageHierarchy(classes) {
+  var map = {};
+
+  function find(name, data) {
+    var node = map[name], i;
+    if (!node) {
+      node = map[name] = data || {name: name, children: []};
+      if (name.length) {
+        node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
+        node.parent.children.push(node);
+        node.key = name.substring(i + 1);
+      }
+    }
+    return node;
+  }
+
+  classes.forEach(function(d) {
+    find(d.name, d);
+  });
+
+  return d3.hierarchy(map[""]);
+}
+
+// Return a list of imports for the given array of nodes.
+function packageImports(nodes) {
+  var map = {},
+      imports = [];
+
+  // Compute a map from name to node.
+  nodes.forEach(function(d) {
+    map[d.data.name] = d;
+  });
+
+  // For each import, construct a link from the source to target node.
+  nodes.forEach(function(d) {
+    if (d.data.imports) d.data.imports.forEach(function(i) {
+      imports.push(map[d.data.name].path(map[i]));
+    });
+  });
+
+  return imports;
+}
+
+</script>
 </html>
