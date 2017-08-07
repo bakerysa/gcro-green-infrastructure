@@ -3,20 +3,20 @@
 //////////////////////////////////////////////////////////*/
 
 var NameProvider = [
-	"A.Agriculture, Forestry and Fisheries", // 1
-	"B.Energy", // 2
-	"C.Environmental Affairs", // 3
-	"D.Human Settlements", // 4
-	"E. Mineral Resources", // 5
-	"F.Public Enterprises", // 6
-	"G. Public Works", // 7
-	"H. Rural Development & Land Reform", // 8
-	"I. Science & Technology", // 9
-	"J. Sport & Recreation South Africa", // 10
-	"K. Tourism", // 11
-	"L. Trade & Industry", // 12
-	"M. Transport", // 13
-	"N. Water Affairs", // 14
+	"Agriculture, Forestry and Fisheries", // 1
+	"Energy", // 2
+	"Environmental Affairs", // 3
+	"Human Settlements", // 4
+	"Mineral Resources", // 5
+	"Public Enterprises", // 6
+	"Public Works", // 7
+	"Rural Development & Land Reform", // 8
+	"Science & Technology", // 9
+	"Sport & Recreation South Africa", // 10
+	"Tourism", // 11
+	"Trade & Industry", // 12
+	"Transport", // 13
+	"Water Affairs", // 14
 	"Gauteng Department of Roads and Transport   ", // 15
 	"Gauteng Department of Infrastructure Development  ", // 16
 	"Gauteng Department of Human Settlements  ", // 17
@@ -39,12 +39,12 @@ var NameProvider = [
 	"City Planning", // 34
 	"Environment and Waste Management Services", // 35
 	"Water, Sanitation and Energy", // 36
-	"MMC: Infrastructure Planning, Development and Asset Management (IPAM)", // 37
-	"MMC: Human Settlement", // 38
-	"MMC: Sport, Recreation, Arts and Culture, Library Information Services, Parks and Cemeteries", // 39
-	"MMC: Agriculture, Local Economic Development, Development Planning and Tourism", // 40
-	"MMC: Environmental Management and Planning", // 41
-	"MMC: Basic Services", // 42
+	"Infrastructure Planning, Development and Asset Management (IPAM)", // 37
+	"Human Settlement", // 38
+	"Sport, Recreation, Arts and Culture, Library Information Services, Parks and Cemeteries", // 39
+	"Agriculture, Local Economic Development, Development Planning and Tourism", // 40
+	"Environmental Management and Planning", // 41
+	"Basic Services", // 42
 	"Infrastructure", // 43
 	"Community Services", // 44
 	"Economic LED and Planning", // 45
@@ -85,39 +85,39 @@ var NameProvider = [
 	"Planners", // 80
 	"Academics/Researchers", // 81
 	"Practitioners", // 82
-	"A.Urban Design", // 83
-	"B. Urban Planning", // 84
-	"C. Urban Studies", // 85
-	"D. Urban Metabolism", // 86
-	"E. Urban and Regional methods", // 87
-	"F.Urban Theory", // 88
-	"G.Urban Governance", // 89
-	"H. City-region studies", // 90
-	"I. Regional studies", // 91
-	"J. Regional development", // 92
-	"K. Geography", // 93
-	"L. Transport/Mobility/ Transport geography/ Transport planning", // 94
-	"M. Geoinformatics", // 95
-	"N. Policy making", // 96
-	"O.Economics", // 97
-	"P. Scenario/future studies", // 98
-	"Q. Global change studies", // 99
-	"R. Sustainability", // 100
-	"S. Environmental policy and practice", // 101
-	"T. Conservation biogeography", // 102
-	"U. Biodiversity planning", // 103
-	"V. Environmental governance", // 104
-	"W. water", // 105
-	"X. Landscape ecology", // 106
-	"Y. water resource management", // 107
-	"Z. Water security ", // 108
-	"AA. Air quality", // 109
-	"A. Detailed technical information", // 110
-	"B. Short concise synthesis of principles", // 111
-	"A. Municipal", // 112
-	"B. Provincial", // 113
-	"C. National", // 114
-	"D. Ecological boundaries", // 115
+	"Urban Design", // 83
+	"Urban Planning", // 84
+	"Urban Studies", // 85
+	"Urban Metabolism", // 86
+	"Urban and Regional methods", // 87
+	"Urban Theory", // 88
+	"Urban Governance", // 89
+	"City-region studies", // 90
+	"Regional studies", // 91
+	"Regional development", // 92
+	"Geography", // 93
+	"Transport/Mobility/ Transport geography/ Transport planning", // 94
+	"Geoinformatics", // 95
+	"Policy making", // 96
+	"Economics", // 97
+	"Scenario/future studies", // 98
+	"Global change studies", // 99
+	"Sustainability", // 100
+	"Environmental policy and practice", // 101
+	"Conservation biogeography", // 102
+	"Biodiversity planning", // 103
+	"Environmental governance", // 104
+	"Water", // 105
+	"Landscape ecology", // 106
+	"Water resource management", // 107
+	"Water security ", // 108
+	"Air quality", // 109
+	"Detailed technical information", // 110
+	"Short concise synthesis of principles", // 111
+	"Municipal", // 112
+	"Provincial", // 113
+	"National", // 114
+	"Ecological boundaries", // 115
 
 ];
 
@@ -357,13 +357,134 @@ var colors = [
 	/* 113 */"#6591B2",
 	/* 114 */"#6591B2",
 	/* 115 */"#6591B2",
+];
 
+var stroketype = [
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
+	"jotted",
+	"solid",
+	"jotted",
+	"solid",
+	"jotted",
 ];
 
 /*Initiate the color scale*/
 var fill = d3.scale.ordinal()
     .domain(d3.range(NameProvider.length))
     .range(colors);
+
+var stroke = d3.scale.ordinal()
+	.domain(d3.range(NameProvider.length))
+	.range(stroketype);
 
 /*//////////////////////////////////////////////////////////
 /////////////// Initiate Chord Diagram /////////////////////
@@ -378,6 +499,7 @@ var margin = {top: 80, right: 80, bottom: 80, left: 80},
 var svg = d3.select("#chart").append("svg:svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+		// .style("stroke-dasharray", (5, 10))
 		.append("svg:g")
     .attr("transform", "translate(" + (margin.left + width/2) + "," + (margin.top + height/2) + ")");
 
@@ -402,14 +524,7 @@ var g = svg.selectAll("g.group")
 	.enter().append("svg:g")
 	.attr("class", function(d) {return "group " + NameProvider[d.index];});
 
-g.append("svg:path")
-	  .attr("class", "arc")
-	  // .style("stroke", function(d) { return fill(d.index); })
-	  .style("fill", function(d) { return fill(d.index); })
-	  .attr("d", arc)
-	  .style("opacity", 0)
-	  .transition().duration(1000)
-	  .style("opacity", 1);
+
 
 /*//////////////////////////////////////////////////////////
 ////////////////// Initiate Ticks //////////////////////////
