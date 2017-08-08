@@ -18,10 +18,10 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/flare.json": {
+	"\/gcro.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/flare-min.json",
+		"oAP": "\/gcro-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1

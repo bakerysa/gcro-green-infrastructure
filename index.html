@@ -17,7 +17,6 @@ body {
 }
 
 .link {
-  stroke: steelblue;
   stroke-opacity: 0.4;
   fill: none;
   pointer-events: none;
@@ -87,8 +86,83 @@ function linkStroke() {
   }
 };
 
-d3.json("flare.json", function(error, classes) {
+ d3.json("gcro.json", function(error, classes) {
 
+   function linkColor(data) {
+  return classes.map(function(className) {
+    console.log(className.color);
+    return className.color;
+  });
+}
+
+  //  function linkColor(data) {
+   //
+  //    _.forEach(classes, function(obj) {
+
+
+
+        //  console.log(obj.color);
+
+        //  for (var key in obj) {
+
+          //  console.log(key + ":" + obj[key]);
+
+
+              // return obj.color;
+
+
+              //  if (obj.color === "red") {
+              //    return "#832A2A";
+              //  }
+              //  else if (obj.color === "blue") {
+              //    return "blue";
+              //  }
+               // else if (color === "johannesburg") {
+               //   return "#E52425";
+               // }
+               // else if (color === "tshwane") {
+               //   return "#ED5926";
+               // }
+               // else if (color === "ekurhuleni") {
+               //   return "#CC5A31";
+               // }
+               // else if (color === "emfuleni") {
+               //   return "#F48851";
+               // }
+               // else if (color === "lesedi") {
+               //   return "#F07067";
+               // }
+               // else if (color === "merafong") {
+               //   return "#D19F22";
+               // }
+               // else if (color === "midvaal") {
+               //   return "#DEC478";
+               // }
+               // else if (color === "mogale") {
+               //   return "#338933";
+               // }
+               // else if (color === "randwest") {
+               //   return "#6E9C73";
+               // }
+               // else if (color === "uj") {
+               //   return "#74C179";
+               // }
+               // else if (color === "wits") {
+               //   return "#A3C9A7";
+               // }
+               // else if (color === "stakeholders") {
+               //   return "#178287";
+               // }
+               // else if (color === "knowledge") {
+               //   return "#1F8395";
+               // }
+              //  else if (obj[key] === "blue") {
+              //    return "#485A96";
+              //  }
+               // else if (color === "discipline") {
+               //   return "#6591B2";
+               // }
+        //  });
 
   if (error) throw error;
 
@@ -103,66 +177,7 @@ d3.json("flare.json", function(error, classes) {
       .each(function(d) { d.source = d[0], d.target = d[d.length - 1];})
       .attr("class", "link")
       .attr("d", line)
-      .style("stroke", function(classes){
-
-        _.forEach(classes, function(d) {
-
-            var name = name.split('.')[0];
-
-            if (name === "national") {
-              return "#832A2A";
-            }
-            else if (name === "gauteng") {
-              return "#AA0A0B";
-            }
-            else if (name === "johannesburg") {
-              return "#E52425";
-            }
-            else if (name === "tshwane") {
-              return "#ED5926";
-            }
-            else if (name === "ekurhuleni") {
-              return "#CC5A31";
-            }
-            else if (name === "emfuleni") {
-              return "#F48851";
-            }
-            else if (name === "lesedi") {
-              return "#F07067";
-            }
-            else if (name === "merafong") {
-              return "#D19F22";
-            }
-            else if (name === "midvaal") {
-              return "#DEC478";
-            }
-            else if (name === "mogale") {
-              return "#338933";
-            }
-            else if (name === "randwest") {
-              return "#6E9C73";
-            }
-            else if (name === "uj") {
-              return "#74C179";
-            }
-            else if (name === "wits") {
-              return "#A3C9A7";
-            }
-            else if (name === "stakeholders") {
-              return "#178287";
-            }
-            else if (name === "knowledge") {
-              return "#1F8395";
-            }
-            else if (name === "staff") {
-              return "#485A96";
-            }
-            else if (name === "discipline") {
-              return "#6591B2";
-            }
-        });
-
-      });
+      .attr('stroke', linkColor(classes));
 
   node = node
     .data(root.leaves())
