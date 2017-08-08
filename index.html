@@ -8,9 +8,13 @@
 
 </style>
 <body>
-
+  <div id="legend-container">
+    <svg id="legend"></svg>
+  </div>
+</body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
-<script type="text/javascript" src="d3.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/d3-legend.js"></script>
 <script>
 
 var diameter = 800,
@@ -51,7 +55,7 @@ function linkStroke() {
 
    function linkColor(data) {
   return classes.map(function(className) {
-    console.log(className.color);
+    // console.log(className.color);
     return className.color;
   });
 }
@@ -70,8 +74,12 @@ function linkStroke() {
       })
       .attr("class", "link")
       .attr("d", line)
-      .attr('stroke', function(d) { console.log(d[0].data.color); return d[0].data.color;} )
-      .attr('stroke-dasharray', function(d) { console.log(d[0].data.stroke); return d[0].data.stroke;} );
+      .attr('stroke', function(d) {
+        // console.log(d[0].data.color);
+        return d[0].data.color;} )
+      .attr('stroke-dasharray', function(d) {
+        //  console.log(d[0].data.stroke);
+        return d[0].data.stroke;} );
 
   node = node
     .data(root.leaves())
@@ -153,6 +161,29 @@ function packageImports(nodes) {
 
   return imports;
 }
+
+// .domain(["Gauteng Province", "City of Johannesburg Metropolitan Municipality", "City of Tshwane Metropolitan Municipality", "Ekurhuleni Metropolitan Municipality", "Emfuleni Local Municipality", "Lesedi Local Municipality", "Merafong City Local Municipality", "Midvaal Local Municipality", "Mogale City Local Municipality", "Rand West City Local Municipality", "UJ", "Wits", "Practitioners"])
+// .range(["#832A2A", "#AA0A0B", "#E52425", "#ED5926", "#CC5A31", "#F48851", "#F07067", "#D19F22", "#DEC478", "#338933", "#6E9C73", "#74C179", "#A3C9A7", "#178287"]);
+
+var linear = d3.scaleLinear()
+  .domain([0,10])
+  .range(["#832A2A", "#AA0A0B", "#E52425", "#ED5926", "#CC5A31", "#F48851", "#F07067", "#D19F22", "#DEC478", "#338933", "#6E9C73", "#74C179", "#A3C9A7", "#178287"]);
+
+
+var svg = d3.select("#legend");
+
+svg.append("g")
+  .attr("class", "legendLinear")
+  .attr("transform", "translate(20,20)");
+
+var legendLinear = d3.legendColor()
+  .shapeWidth(30)
+  // .cells(['r', 2, 3, 6, 8])
+  .orient('vertical')
+  .scale(linear);
+
+svg.select(".legendLinear")
+  .call(legendLinear);
 
 </script>
 </html>

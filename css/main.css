@@ -45,6 +45,15 @@ body {
 	background: white;
 }
 
+
+#legend-container {
+	position: fixed;
+	top: -100px;
+	left: 100px;
+	width: 100px;
+	height: 400px;
+}
+
 svg {
 	position: absolute;
 	left: 50%;
