@@ -1,64 +1,25 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83560/671406/css/fonts.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 <style>
-
-body {
-  background: #222;
-  margin: 0 auto;
-}
-
-.node {
-  font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  fill: #bbb;
-}
-
-.node:hover {
-  fill: #fff;
-}
-
-.link {
-  stroke-opacity: 0.4;
-  fill: none;
-  pointer-events: none;
-}
-
-.node:hover,
-.node--source,
-.node--target {
-  font-weight: 700;
-}
-
-.node--source {
-  fill: #2ca02c;
-}
-
-.node--target {
-  fill: #d62728;
-}
-
-.link--source,
-.link--target {
-  stroke-opacity: 1;
-  stroke-width: 2px;
-}
-
-.link--source {
-  stroke: #d62728;
-}
-
-.link--target {
-  stroke: #2ca02c;
-}
 
 </style>
 <body>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
 <script type="text/javascript" src="d3.min.js"></script>
 <script>
 
-var diameter = 1080,
+var diameter = 800,
     radius = diameter / 2,
     innerRadius = radius - 120;
+
+var margin = {top: 80, right: 80, bottom: 80, left: 80},
+    width = 850 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
 
 var cluster = d3.cluster()
     .size([360, innerRadius]);
@@ -69,10 +30,10 @@ var line = d3.radialLine()
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
 var svg = d3.select("body").append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
-  .append("g")
-    .attr("transform", "translate(" + radius + "," + radius + ")");
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + (margin.left + width/2) + "," + (margin.top + height/2) + ")");
 
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
@@ -95,75 +56,6 @@ function linkStroke() {
   });
 }
 
-  //  function linkColor(data) {
-   //
-  //    _.forEach(classes, function(obj) {
-
-
-
-        //  console.log(obj.color);
-
-        //  for (var key in obj) {
-
-          //  console.log(key + ":" + obj[key]);
-
-
-              // return obj.color;
-
-
-              //  if (obj.color === "red") {
-              //    return "#832A2A";
-              //  }
-              //  else if (obj.color === "blue") {
-              //    return "blue";
-              //  }
-               // else if (color === "johannesburg") {
-               //   return "#E52425";
-               // }
-               // else if (color === "tshwane") {
-               //   return "#ED5926";
-               // }
-               // else if (color === "ekurhuleni") {
-               //   return "#CC5A31";
-               // }
-               // else if (color === "emfuleni") {
-               //   return "#F48851";
-               // }
-               // else if (color === "lesedi") {
-               //   return "#F07067";
-               // }
-               // else if (color === "merafong") {
-               //   return "#D19F22";
-               // }
-               // else if (color === "midvaal") {
-               //   return "#DEC478";
-               // }
-               // else if (color === "mogale") {
-               //   return "#338933";
-               // }
-               // else if (color === "randwest") {
-               //   return "#6E9C73";
-               // }
-               // else if (color === "uj") {
-               //   return "#74C179";
-               // }
-               // else if (color === "wits") {
-               //   return "#A3C9A7";
-               // }
-               // else if (color === "stakeholders") {
-               //   return "#178287";
-               // }
-               // else if (color === "knowledge") {
-               //   return "#1F8395";
-               // }
-              //  else if (obj[key] === "blue") {
-              //    return "#485A96";
-              //  }
-               // else if (color === "discipline") {
-               //   return "#6591B2";
-               // }
-        //  });
-
   if (error) throw error;
 
   var root = packageHierarchy(classes)
@@ -174,10 +66,12 @@ function linkStroke() {
   link = link
     .data(packageImports(root.leaves()))
     .enter().append("path")
-      .each(function(d) { d.source = d[0], d.target = d[d.length - 1];})
+      .each(function(d) {d.source = d[0], d.target = d[d.length - 1];
+      })
       .attr("class", "link")
       .attr("d", line)
-      .attr('stroke', linkColor(classes));
+      .attr('stroke', function(d) { console.log(d[0].data.color); return d[0].data.color;} )
+      .attr('stroke-dasharray', function(d) { console.log(d[0].data.stroke); return d[0].data.stroke;} );
 
   node = node
     .data(root.leaves())
