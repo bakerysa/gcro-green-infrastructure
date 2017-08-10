@@ -3,33 +3,48 @@
   <meta charset="utf-8">
   <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83560/671406/css/fonts.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>GRCO Green Infrastructure</title>
 </head>
 <style>
 
 </style>
 <body>
   <div id="legend-container">
-    <svg id="legend"></svg>
+
+
+    <div class="legend" style="background:#832A2A;"></div><div class="label">National Government</div><div class="clearfix"></div>
+    <div class="legend" style="background:#AA0A0B;"></div><div class="label">Gauteng Province</div><div class="clearfix"></div>
+    <div class="legend" style="background:#E52425;"></div><div class="label">City of Johannesburg Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#ED5926;"></div><div class="label">City of Tshwane Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#CC5A31;"></div><div class="label">Ekurhuleni Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#F48851;"></div><div class="label">Emfuleni Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#F07067;"></div><div class="label">Lesedi Local Municipality (MMC)</div><div class="clearfix"></div>
+    <div class="legend" style="background:#D19F22;"></div><div class="label">Merafong City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#DEC478;"></div><div class="label">Midvaal Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#338933;"></div><div class="label">Mogale City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#6E9C73;"></div><div class="label">Rand West City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#74C179;"></div><div class="label">UJ</div><div class="clearfix"></div>
+    <div class="legend" style="background:#A3C9A7;"></div><div class="label">Wits</div><div class="clearfix"></div>
+    <div class="legend" style="background:#178287;"></div><div class="label">Practitioners</div><div class="clearfix"></div>
   </div>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
 <script type="text/javascript" src="js/d3.min.js"></script>
-<script type="text/javascript" src="js/d3-legend.js"></script>
 <script>
 
-var diameter = 800,
+var diameter = 600,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
 var margin = {top: 80, right: 80, bottom: 80, left: 80},
-    width = 850 - margin.left - margin.right,
+    width = 1050 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
 var cluster = d3.cluster()
     .size([360, innerRadius]);
 
 var line = d3.radialLine()
-    .curve(d3.curveBundle.beta(0.85))
+    .curve(d3.curveBundle.beta(0.4)) // tension
     .radius(function(d) { return d.y; })
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
@@ -37,7 +52,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", "translate(" + (margin.left + width/2) + "," + (margin.top + height/2) + ")");
+    .attr("transform", "translate(" + (margin.left + width/2 + 80) + "," + (margin.top + height/2) + ")");
 
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
@@ -77,6 +92,7 @@ function linkStroke() {
       .attr('stroke', function(d) {
         // console.log(d[0].data.color);
         return d[0].data.color;} )
+      .attr('stroke-width', 0.2)
       .attr('stroke-dasharray', function(d) {
         //  console.log(d[0].data.stroke);
         return d[0].data.stroke;} );
@@ -88,6 +104,7 @@ function linkStroke() {
       .attr("dy", "0.31em")
       .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)"); })
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      .style("font-size", "8px")
       .text(function(d) { return d.data.key; })
       .on("mouseover", mouseovered)
       .on("mouseout", mouseouted);
@@ -162,28 +179,6 @@ function packageImports(nodes) {
   return imports;
 }
 
-// .domain(["Gauteng Province", "City of Johannesburg Metropolitan Municipality", "City of Tshwane Metropolitan Municipality", "Ekurhuleni Metropolitan Municipality", "Emfuleni Local Municipality", "Lesedi Local Municipality", "Merafong City Local Municipality", "Midvaal Local Municipality", "Mogale City Local Municipality", "Rand West City Local Municipality", "UJ", "Wits", "Practitioners"])
-// .range(["#832A2A", "#AA0A0B", "#E52425", "#ED5926", "#CC5A31", "#F48851", "#F07067", "#D19F22", "#DEC478", "#338933", "#6E9C73", "#74C179", "#A3C9A7", "#178287"]);
-
-var linear = d3.scaleLinear()
-  .domain([0,10])
-  .range(["#832A2A", "#AA0A0B", "#E52425", "#ED5926", "#CC5A31", "#F48851", "#F07067", "#D19F22", "#DEC478", "#338933", "#6E9C73", "#74C179", "#A3C9A7", "#178287"]);
-
-
-var svg = d3.select("#legend");
-
-svg.append("g")
-  .attr("class", "legendLinear")
-  .attr("transform", "translate(20,20)");
-
-var legendLinear = d3.legendColor()
-  .shapeWidth(30)
-  // .cells(['r', 2, 3, 6, 8])
-  .orient('vertical')
-  .scale(linear);
-
-svg.select(".legendLinear")
-  .call(legendLinear);
 
 </script>
 </html>

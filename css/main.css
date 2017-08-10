@@ -33,25 +33,37 @@
 body {
   background: #222;
   margin: 0 auto;
+	font-family: 'Sentinel-Light';
 }
 
 
-.label1 {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 1000;
-	transform: translate(-230px, -230px) rotate(-45deg);
-	background: white;
+.clearfix {
+	clear: both;
 }
-
 
 #legend-container {
 	position: fixed;
-	top: -100px;
-	left: 100px;
-	width: 100px;
-	height: 400px;
+	top: 10px;
+	left: 10px;
+	width: 200px;
+	height: 600px;
+}
+
+#legend-container .legend {
+	width: 30px;
+	float: left;
+	height: 20px;
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+#legend-container .label {
+	width: 130px;
+	color: #bbb;
+	height: 20px;
+	float: left;
+	padding: 5px;
+	font-size: 10px;
+	line-height: 10px;
 }
 
 svg {
