@@ -3,29 +3,27 @@
   <meta charset="utf-8">
   <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/83560/671406/css/fonts.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>GRCO Green Infrastructure</title>
+  <title>GRCO - Green Infrastructure</title>
 </head>
 <style>
 
 </style>
 <body>
   <div id="legend-container">
-
-
     <div class="legend" style="background:#832A2A;"></div><div class="label">National Government</div><div class="clearfix"></div>
     <div class="legend" style="background:#AA0A0B;"></div><div class="label">Gauteng Province</div><div class="clearfix"></div>
-    <div class="legend" style="background:#E52425;"></div><div class="label">City of Johannesburg Metropolitan Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#ED5926;"></div><div class="label">City of Tshwane Metropolitan Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#CC5A31;"></div><div class="label">Ekurhuleni Metropolitan Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#F48851;"></div><div class="label">Emfuleni Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#CC1A1B;"></div><div class="label">City of Johannesburg Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#ea3232;"></div><div class="label">City of Tshwane Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#ed4f4f;"></div><div class="label">Ekurhuleni Metropolitan Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#f9b4aa;"></div><div class="label">Emfuleni Local Municipality</div><div class="clearfix"></div>
     <div class="legend" style="background:#F07067;"></div><div class="label">Lesedi Local Municipality (MMC)</div><div class="clearfix"></div>
-    <div class="legend" style="background:#D19F22;"></div><div class="label">Merafong City Local Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#DEC478;"></div><div class="label">Midvaal Local Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#338933;"></div><div class="label">Mogale City Local Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#6E9C73;"></div><div class="label">Rand West City Local Municipality</div><div class="clearfix"></div>
-    <div class="legend" style="background:#74C179;"></div><div class="label">UJ</div><div class="clearfix"></div>
-    <div class="legend" style="background:#A3C9A7;"></div><div class="label">Wits</div><div class="clearfix"></div>
-    <div class="legend" style="background:#178287;"></div><div class="label">Practitioners</div><div class="clearfix"></div>
+    <div class="legend" style="background:#f99d8c;"></div><div class="label">Merafong City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#f9896e;"></div><div class="label">Midvaal Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#f9704b;"></div><div class="label">Mogale City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#ed5926;"></div><div class="label">Rand West City Local Municipality</div><div class="clearfix"></div>
+    <div class="legend" style="background:#338933;"></div><div class="label">UJ</div><div class="clearfix"></div>
+    <div class="legend" style="background:#74c179;"></div><div class="label">Wits</div><div class="clearfix"></div>
+    <div class="legend" style="background:#31a3af;"></div><div class="label">Practitioners</div><div class="clearfix"></div>
   </div>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
@@ -56,15 +54,6 @@ var svg = d3.select("body").append("svg")
 
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
-
-function linkStroke() {
-  if (line === "solid") {
-    return 0;
-  }
-  else if (line === "jotted") {
-    return 5,5;
-  }
-};
 
  d3.json("gcro.json", function(error, classes) {
 
