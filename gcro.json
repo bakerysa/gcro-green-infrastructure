@@ -77,7 +77,7 @@
     "imports": []
   },
   {
-    "name": "knowledge.Transport/Mobility/Transport geography/Transport planning",
+    "name": "knowledge.Transport",
     "size": 3938,
     "color": "#1F8395",
     "stroke": "5.5",
@@ -329,35 +329,35 @@
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
-    "name": "gauteng.Gauteng Department of Roads and Transport",
+    "name": "gauteng.Roads and Transport",
     "size": 3938,
     "color": "#AA0A0B",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "gauteng.Gauteng Department of Infrastructure Development",
+    "name": "gauteng.Infrastructure Development",
     "size": 3938,
     "color": "#AA0A0B",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "gauteng.Gauteng Department of Human Settlements",
+    "name": "gauteng.Human Settlements",
     "size": 3938,
     "color": "#AA0A0B",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "gauteng.Gauteng Department of Sports, Arts, Culture and Recreation",
+    "name": "gauteng.Sports, Arts, Culture and Recreation",
     "size": 3938,
     "color": "#AA0A0B",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "gauteng.Gauteng Department of Agriculture and Rural Development",
+    "name": "gauteng.Agriculture and Rural Development",
     "size": 3938,
     "color": "#AA0A0B",
     "stroke": "5.5",
@@ -413,7 +413,7 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "tshwane.Housing and Sustainable Human Settlement Development",
+    "name": "tshwane.Housing",
     "size": 3938,
     "color": "#ea3232",
     "stroke": "5.5",
@@ -483,7 +483,7 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "emfuleni.Infrastructure Planning, Development and Asset Management (IPAM)",
+    "name": "emfuleni.Infrastructure Planning (IPAM)",
     "size": 3938,
     "color": "#f9b4aa",
     "stroke": "5.5",
@@ -497,14 +497,14 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "emfuleni.Sport, Recreation, Arts and Culture, Library Information Services, Parks and Cemeteries",
+    "name": "emfuleni.Sports, Recreation, Arts and Culture",
     "size": 3938,
     "color": "#f9b4aa",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "emfuleni.Agriculture, Local Economic Development, Development Planning and Tourism",
+    "name": "emfuleni.Agriculture, LED, Development Planning and Tourism",
     "size": 3938,
     "color": "#f9b4aa",
     "stroke": "5.5",
@@ -567,7 +567,7 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "merafong.Sport, Recreation, Arts, Culture, Heritage, Libraries & Information Services",
+    "name": "merafong.Sport, Recreation, Arts, Culture",
     "size": 3938,
     "color": "#f99d8c",
     "stroke": "5.5",
@@ -693,14 +693,14 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "uj.School of Civil Engineering and the Built Environment",
+    "name": "uj.Civil Engineering and the Built Environment",
     "size": 3938,
     "color": "#338933",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "uj.School of Mining, Metallurgy and Chemical Engineering",
+    "name": "uj.Mining, Metallurgy and Chemical Engineering",
     "size": 3938,
     "color": "#338933",
     "stroke": "5.5",
@@ -735,14 +735,14 @@
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "wits.School of Animal, Plant & Environmental Sciences",
+    "name": "wits.Animal, Plant & Environmental Sciences",
     "size": 3938,
     "color": "#74c179",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
-    "name": "wits.School of Geography, Archaeology & Environmental Studies",
+    "name": "wits.Geography, Archaeology & Environmental Studies",
     "size": 3938,
     "color": "#74c179",
     "stroke": "5.5",
