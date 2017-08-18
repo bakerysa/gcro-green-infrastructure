@@ -233,133 +233,133 @@
   {
     "name": "national.Agriculture, Forestry and Fisheries",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Energy",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Environmental Affairs",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Human Settlements",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Mineral Resources",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Public Enterprises",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Public Works",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Rural Development & Land Reform",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Science & Technology",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Sport & Recreation South Africa",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Tourism",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Trade & Industry",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Transport",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "national.Water Affairs",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.Ecological boundaries"]
   },
   {
     "name": "gauteng.Roads and Transport",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "2.5",
     "imports": ["knowledge.Economics", "spatial.Municipal", "spatial.National", "spatial.Ecological boundaries"]
   },
   {
     "name": "gauteng.Infrastructure Development",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "2.5",
     "imports": ["knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "spatial.Municipal", "spatial.Provincial", "spatial.National", "spatial.Ecological boundaries"]
   },
   {
     "name": "gauteng.Human Settlements",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "2.5",
     "imports": ["knowledge.Transport", "knowledge.Economics", "spatial.Municipal", "spatial.National", "spatial.Ecological boundaries"]
   },
   {
     "name": "gauteng.Sports, Arts, Culture and Recreation",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "2.5",
     "imports": ["knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Economics", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal", "spatial.National", "spatial.Ecological boundaries"]
   },
   {
     "name": "gauteng.Agriculture and Rural Development",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "2.5",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.Transport", "knowledge.Economics", "spatial.Municipal", "spatial.National", "spatial.Ecological boundaries"]
   },
