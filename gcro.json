@@ -233,133 +233,133 @@
   {
     "name": "national.Agriculture, Forestry and Fisheries",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Energy",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Environmental Affairs",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Human Settlements",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Mineral Resources",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Public Enterprises",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Public Works",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Rural Development & Land Reform",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Science & Technology",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Sport & Recreation South Africa",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Tourism",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Trade & Industry",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Transport",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "national.Water Affairs",
     "size": 3938,
-    "color": "#832A2A",
+    "color": "#E5BA41",
     "stroke": "5.5",
     "imports": ["information.Short concise synthesis of principles"]
   },
   {
     "name": "gauteng.Roads and Transport",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "gauteng.Infrastructure Development",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "gauteng.Human Settlements",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "gauteng.Sports, Arts, Culture and Recreation",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "gauteng.Agriculture and Rural Development",
     "size": 3938,
-    "color": "#AA0A0B",
+    "color": "#A06075",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
