@@ -91,12 +91,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/js\/d3-legend-min.js": {
 		"ft": 64,
 		"mi": 1,
