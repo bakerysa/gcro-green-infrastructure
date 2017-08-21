@@ -485,42 +485,42 @@
   {
     "name": "emfuleni.Infrastructure Planning (IPAM)",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "emfuleni.Human Settlement",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "emfuleni.Sports, Recreation, Arts and Culture",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "emfuleni.Agriculture, LED, Development Planning and Tourism",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "emfuleni.Environmental Management and Planning",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
   {
     "name": "emfuleni.Basic Services",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "5.5",
     "imports": ["information.Detailed technical information", "information.Short concise synthesis of principles"]
   },
