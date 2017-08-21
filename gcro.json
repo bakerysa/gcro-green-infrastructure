@@ -485,42 +485,42 @@
   {
     "name": "emfuleni.Infrastructure Planning (IPAM)",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Policy making", "spatial.Municipal"]
   },
   {
     "name": "emfuleni.Human Settlement",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Transport", "knowledge.Geoinformatics", "knowledge.Policy making", "spatial.Municipal"]
   },
   {
     "name": "emfuleni.Sport, Recreation, Arts and Culture",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Geoinformatics", "knowledge.Policy making", "spatial.Municipal"]
   },
   {
     "name": "emfuleni.Agriculture, LED, Development Planning and Tourism",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Design", "knowledge.Urban Planning", "knowledge.Urban Studies", "knowledge.Urban Metabolism", "knowledge.Urban and Regional methods", "knowledge.Urban Theory", "knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Geoinformatics", "knowledge.Policy making", "spatial.Municipal"]
   },
   {
     "name": "emfuleni.Environmental Management and Planning",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Policy making", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal"]
   },
   {
     "name": "emfuleni.Basic Services",
     "size": 3938,
-    "color": "#f9b4aa",
+    "color": "#F07067",
     "stroke": "0",
     "imports": ["knowledge.Urban Governance", "knowledge.City-region studies", "knowledge.Geography", "knowledge.Policy making", "knowledge.Scenario/future studies", "knowledge.Global change studies", "knowledge.Sustainability", "knowledge.Environmental policy and practice", "knowledge.Conservation biogeography", "knowledge.Biodiversity planning", "knowledge.Environmental governance", "knowledge.Water", "knowledge.Landscape ecology", "knowledge.Water resource management", "knowledge.Water security", "knowledge.Air quality", "spatial.Municipal"]
   },
